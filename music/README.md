@@ -9,7 +9,7 @@
 | The Final Shout    | [Instrumental](https://cloud.mail.ru/public/8nXe/BikFbAHAN) / [GP](hv/The%20Final%20Shout%20(Gbm).gp) |
 | Eternal Cry        | [Instrumental](https://cloud.mail.ru/public/opzL/MVrrTa7aZ) / [GP](hv/Eternal%20Cry%20(Gbm).gp) |
 | Wanted List        | [Instrumental](https://cloud.mail.ru/public/VKAY/D71hCGJ7a) / [GP](hv/Wanted%20List%20(Gbm).gp) |
-| In Last Attack     | [GP](hv/In%20Last%20Attack%20(Fm).gp) |
+| In Last Attack     | [Instrumental](https://cloud.mail.ru/public/yfWE/ktRyGV7NC) / [GP](hv/In%20Last%20Attack%20(Fm).gp) |
 | "LOD"              | [Instrumental](https://cloud.mail.ru/public/EG3k/LMgM3mVFX) / [GP](hv/LOD%20(Gm).gp) |
 | "ROTO"             | [Instrumental](https://cloud.mail.ru/public/7vXK/Ty1HCX3SX) / [GP](hv/ROTO%20(Fsm).gp) |
 | High Density       | [Instrumental](https://cloud.mail.ru/public/SWeV/BAG2fhowZ) / [GP](hv/High%20Density%20(Gbm).gp) |
@@ -35,6 +35,9 @@
 | "IIC"               | [Instrumental](https://cloud.mail.ru/public/M5XZ/WtZFhU3QH) / [GP](soft/IIC%20(Am).gp) |
 | "IMH"               | [Instrumental](https://cloud.mail.ru/public/oGHG/KokAHKdEk) / [GP](soft/IMH%20(Am).gp) |
 | "LTYH"              | [Instrumental](https://cloud.mail.ru/public/bz1o/HbiPgNTsM) / [GP](soft/LTYH%20(Am).gp) |
+| "AIL"               | [Instrumental](https://cloud.mail.ru/public/5HkD/v7mghTY2j) / [GP](soft/AIL%20(Fsm).gp) |
+| "S5"                | [Instrumental](https://cloud.mail.ru/public/Qo62/eTDQqTZKb) / [GP](soft/S5%20(Am).gp) |
+| "S34"               | [Instrumental](https://cloud.mail.ru/public/kCFy/kBEba8oxi) / [GP](soft/S34%20(Am).gp) |
 | Комп Это Сила       | [Demo](https://cloud.mail.ru/public/pjDN/nM7nmyakR) / [GP](soft/Комп%20Это%20Сила%20(Fsm).gp) |
 
 
