@@ -1,7 +1,5 @@
 # Best Music
 
-This is the list of music artists and albums that I consider as the best.
-
 Content:
 
 * Artists
@@ -24,16 +22,10 @@ Content:
 
 ## Diamond Heavy/Rock Bands
 
-The Gods of Heavy/Rock Music.
-The bands that proved themselves throughout the years with some of the best albums and songs ever made in human history.
-There probably wouldn't be anyone like them ever again.
-Everyone should definitely listen to all material from these bands they can possibly find.
-
 | Artist | Country |
 | --- | --- |
 | Black Sabbath / Heaven & Hell | uk/us |
 | Deep Purple | uk |
-| Exodus | us |
 | Iron Maiden | uk |
 | Metallica | us |
 | Whitesnake | us |
@@ -46,6 +38,7 @@ Everyone should definitely listen to all material from these bands they can poss
 | Angelus Apatrida |
 | Annihilator | ca |
 | Evile |
+| Exodus | us |
 | Flotsam And Jetsam |
 | Havok | us |
 | Sepultura | br |
