@@ -1,10 +1,9 @@
 REM @echo off
 echo "Post-install configuration script for Windows 10"
-
 rem tested on 22H2 (19045)
-rem "memory in use" after restart =860MB
-rem disk "used space" =14.1GB
-rem background+windows processes =13+35
+rem "Memory in use" after restart: 1.2GB -> 930MB
+rem background+windows processes: 18+81 -> 12+65
+rem Disk "Used Space" after enabling compression: 12.2GB
 
 rem REVIEW THE COMMANDS BEFORE EXECUTING OR MAKE BACKUP! THE CHANGES CANNOT BE REVERTED!
 
@@ -89,7 +88,7 @@ exit /b
 
     echo "delete all restore points"
     vssadmin delete shadows /for=c: /all /quiet
-    powershell -command "Disable-ComputerRestore -Drive C:\"
+    powershell -command "Disable-ComputerRestore -Drive C:"
 
     echo "disable system restore task"
     schtasks /change /TN "Microsoft\Windows\SystemRestore\SR" /disable >nul
@@ -112,14 +111,13 @@ exit /b
     echo "disable service: Update Orchestrator Service"
     sc config UsoSvc  start=disabled
 
-    echo "take ownership of the dir"
+    echo "take ownership for the dir"
     takeown /a /r /f %WINDIR%\System32\Tasks\Microsoft\Windows\UpdateOrchestrator
 
     echo "grant full access file permissions to administrators"
     icacls %WINDIR%\System32\Tasks\Microsoft\Windows\UpdateOrchestrator /t /grant administrators:f
 
     echo "disable tasks"
-    powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\UpdateOrchestrator\Scheduled Start'"
     powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\UpdateOrchestrator\Schedule Scan'"
     powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\UpdateOrchestrator\USO_UxBroker'"
     powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\UpdateOrchestrator\Schedule Scan Static Task'"
@@ -202,11 +200,11 @@ exit /b
     echo.
     echo "disable Windows Defender"
 
-    echo "Now disable Tamper Protection MANUALLY:"
-    echo "1. Press Windows key to open Start Menu"
-    echo "2. Enter "tamper" and press Enter"
-    echo "3. set Tamper Protection = Off"
-    pause
+    rem echo "Now disable Tamper Protection MANUALLY:"
+    rem echo "1. Press Windows key to open Start Menu"
+    rem echo "2. Enter "tamper" and press Enter"
+    rem echo "3. set Tamper Protection = Off"
+    rem pause
 
     reg add "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows Defender" /v "DisableAntiVirus" /t REG_DWORD /d "1" /f >nul
     reg add "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows Defender\MpEngine" /v "MpEnablePus" /t REG_DWORD /d "0" /f >nul
@@ -302,11 +300,11 @@ exit /b
     echo "disable useless tasks and services"
 
     powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\CloudExperienceHost\CreateObjectTask'"
-    powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\FileHistory\File History (maintenancemode)'"
+    powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\FileHistory\File History (maintenance mode)'"
     powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\NetTrace\GatherNetworkInfo'"
     powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\Power Efficiency Diagnostics\AnalyzeSystem'"
     powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\Bluetooth\UninstallDeviceTask'"
-    powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\Chkdsk\SyspartRepair'"
+    rem powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\Chkdsk\SyspartRepair'"
     powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\Diagnosis\RecommendedTroubleshootingScanner'"
     powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\DiskFootprint\Diagnostics'"
     powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\Windows\DiskFootprint\StorageSense'"
@@ -365,6 +363,7 @@ exit /b
     echo "disable Xbox Live Game Save"
     powershell -command "Disable-ScheduledTask -TaskName 'Microsoft\XblGameSave\XblGameSaveTask'"
     sc config XblGameSave  start=disabled
+    sc config XblAuthManager  start=disabled
 
     echo "disable Optimize drives"
     sc config defragsvc  start=disabled
@@ -400,6 +399,36 @@ exit /b
 
     echo "disable Windows Time"
     sc config W32Time  start=disabled
+
+    echo "disable remote desktop services"
+    rem Remote Access Connection Manager
+    sc config RasMan  start=disabled
+    sc config SessionEnv  start=disabled
+    sc config TermService  start=disabled
+    sc config UmRdpService  start=disabled
+
+    echo "disable Print Spooler"
+    sc config Spooler  start=disabled
+
+    echo "disable Web Account Manager"
+    sc config TokenBroker  start=disabled
+
+    echo "disable Data Usage"
+    sc config DusmSvc  start=disabled
+
+    echo "disable Windows License Manager Service"
+    sc config LicenseManager  start=disabled
+
+    echo "disable Program Compatibility Assistant"
+    sc config PcaSvc start=disabled
+
+    echo "disable Distributed Link Tracking Client"
+    sc config TrkWks  start=disabled
+
+    sc config BthAvctpSvc  start=disabled
+    sc config IKEEXT  start=disabled
+    sc config PolicyAgent  start=disabled
+    sc config camsvc start=disabled
 exit /b
 
 
@@ -492,20 +521,13 @@ exit /b
     powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-LanguageFeatures-Handwriting-en-us*' | Remove-WindowsPackage -Online -NoRestart"
     powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-LanguageFeatures-OCR-en-us*' | Remove-WindowsPackage -Online -NoRestart"
     powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-LanguageFeatures-Speech-en-us*' | Remove-WindowsPackage -Online -NoRestart"
-    powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-MSPaint-FoD*' | ForEach-Object { Remove-WindowsPackage -Online -NoRestart -PackageName $_.PackageName }"
-    powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-Notepad-FoD*' | ForEach-Object { Remove-WindowsPackage -Online -NoRestart -PackageName $_.PackageName }"
-    powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-PowerShell-ISE-FOD*' | ForEach-Object { Remove-WindowsPackage -Online -NoRestart -PackageName $_.PackageName }"
-    powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-Printing-PMCPPC-FoD*' | ForEach-Object { Remove-WindowsPackage -Online -NoRestart -PackageName $_.PackageName }"
-    powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-Printing-WFS-FoD*' | ForEach-Object { Remove-WindowsPackage -Online -NoRestart -PackageName $_.PackageName }"
     powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-UserExperience-Desktop*' | Remove-WindowsPackage -Online -NoRestart"
-    powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-WordPad-FoD*' | ForEach-Object { Remove-WindowsPackage -Online -NoRestart -PackageName $_.PackageName }"
     powershell -command "Get-WindowsPackage -Online -PackageName 'OpenSSH-Client*' | Remove-WindowsPackage -Online -NoRestart"
     powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD*' | Remove-WindowsPackage -Online -NoRestart"
     powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-Hello-Face*' | Remove-WindowsPackage -Online -NoRestart"
     powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-InternetExplorer-Optional*' | Remove-WindowsPackage -Online -NoRestart"
     powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-MediaPlayer*' | Remove-WindowsPackage -Online -NoRestart"
     powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-QuickAssist*' | Remove-WindowsPackage -Online -NoRestart"
-    powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-StepsRecorder*' | ForEach-Object { Remove-WindowsPackage -Online -NoRestart -PackageName $_.PackageName }"
     powershell -command "Get-WindowsPackage -Online -PackageName 'Microsoft-Windows-TabletPCMath*' | Remove-WindowsPackage -Online -NoRestart"
 exit /b
 

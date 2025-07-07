@@ -1,4 +1,4 @@
-echo "Configuration script for Fedora 40"
+echo "Configuration script for Fedora 42"
 # REVIEW COMMANDS BEFORE EXECUTING! SOME CHANGES CANNOT BE REVERTED!
 
 set -e
@@ -9,15 +9,6 @@ if test "$VERBOSE" == "1" ; then
 fi
 
 CMDS_ALL=(
-	hw_info_print
-	hw_camera_disable
-	hw_bluetooth_disable
-	hw_intel_gpu_install
-	hw_amd_gpu_hwaccel
-	hw_battery_max_charge_95_percent
-	hw_speaker_disable
-	hw_time_sync_once
-
 	timezone_set
 	swap_disable
 	selinux_disable
@@ -28,10 +19,14 @@ CMDS_ALL=(
 	repo_default_disable
 	repo_rpmfusion_install
 
-	cdevel_setup
-	user_git_dark
-	user_cache # set up user cache dir in /tmp
-	user_bashrc_conf
+	hw_info_print
+	hw_camera_disable
+	hw_bluetooth_disable
+	hw_intel_gpu_install
+	hw_amd_gpu_hwaccel
+	hw_battery_max_charge_95_percent
+	hw_speaker_disable
+	hw_time_sync_once
 
 	kde_services_disable
 	kde_apps_erase
@@ -41,6 +36,27 @@ CMDS_ALL=(
 	lxqt_install
 	lxqt_apps_default_erase
 	lxqt_dark
+	lxqt_autologin
+
+	user_cache_tmp
+	user_bashrc_conf
+
+	cdevel_setup
+	user_git_dark
+)
+
+CMDS_DEF=(
+	timezone_set
+	swap_disable
+	selinux_disable
+	syslog_disable
+	services_disable
+
+	# kde_apps_erase
+	lxqt_apps_default_erase
+
+	user_cache_tmp
+	user_bashrc_conf
 	lxqt_autologin
 )
 
@@ -58,72 +74,15 @@ APPS_ERASE_KDE=(
 
 if test "$#" -eq 0 ; then
 	echo "Supported commands: ${CMDS_ALL[@]}"
+	echo "Default commands: ${CMDS_DEF[@]}"
 	exit 1
 fi
 
 CMDS=("$@")
+if test "$1" == "default" ; then
+	CMDS=("${CMDS_DEF[@]}")
+fi
 
-# HW
-
-hw_info_print() {
-	uname -a
-	cat /etc/os-release
-	lscpu
-	lsmem
-	lspci
-	glxinfo|grep -A12 'Extended renderer info'
-	lsblk
-	sudo fdisk -l
-	df
-}
-
-hw_intel_gpu_install() {
-	echo "install driver, intel_gpu_top"
-	repo_rpmfusion_install
-	sudo dnf install -y \
-		libva-intel-driver libva-intel-hybrid-driver intel-mediasdk igt-gpu-tools
-	sudo dnf erase libva-intel-media-driver
-}
-
-hw_amd_gpu_hwaccel() {
-	sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
-	# sudo dnf update mesa-*
-}
-
-hw_battery_max_charge_95_percent() {
-	echo 95 | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold
-	echo 'echo 95 > /sys/class/power_supply/BAT0/charge_control_end_threshold' | sudo tee -a /sbin/init_user_cache.sh
-}
-
-hw_speaker_disable() {
-	echo 'blacklist pcspkr' | sudo tee -a /etc/modprobe.d/blacklist.conf
-}
-
-hw_time_sync_once() {
-	timedatectl
-	sudo timedatectl set-ntp true
-	sudo systemctl start systemd-timesyncd
-	sudo systemctl status systemd-timesyncd
-	sleep 1
-	sudo systemctl stop systemd-timesyncd
-	timedatectl
-}
-
-hw_bluetooth_disable() {
-	echo "disable bluetooth"
- 	sudo systemctl disable bluetooth
-	echo "blacklist bluetooth
-blacklist btusb
-blacklist btrtl
-blacklist btbcm
-blacklist btintel" | sudo tee -a /etc/modprobe.d/blacklist.conf
-}
-
-hw_camera_disable() {
-	echo "blacklist uvcvideo" | sudo tee -a /etc/modprobe.d/blacklist.conf
-}
-
-# SYSTEM
 
 timezone_set() {
 	echo "set time zone"
@@ -133,7 +92,7 @@ timezone_set() {
 swap_disable() {
 	echo "disable swap"
 	sudo swapoff -a
-	sudo dnf erase -y zram-generator
+	sudo dnf remove -y zram-generator
 }
 
 selinux_disable() {
@@ -170,23 +129,24 @@ services_disable() {
 }
 
 iptables_autoload_setup() {
-	sudo dnf install -y \
-		iptables-services
+	sudo dnf install iptables-services
 	sudo systemctl start iptables
 	sudo systemctl enable iptables
 	sudo systemctl status iptables
 	sudo iptables-save | sudo tee /etc/sysconfig/iptables
 }
 
-repo_default_disable() {
-	sudo dnf config-manager --set-disabled \
-		updates fedora-cisco-openh264 rpmfusion-free rpmfusion-free-updates
-}
-
-repo_rpmfusion_install() {
+dnf_config() {
+	sudo dnf config-manager setopt \
+		updates.enabled=0 \
+		fedora-cisco-openh264.enabled=0
 	sudo dnf install -y \
 		https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+	sudo dnf config-manager setopt \
+		rpmfusion-free.enabled=0 \
+		rpmfusion-free-updates.enabled=0
 	# https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+	sudo dnf repolist --all
 }
 
 cdevel_setup() {
@@ -198,8 +158,68 @@ cdevel_setup() {
 	sudo rm /etc/profile.d/debuginfod.sh /etc/profile.d/debuginfod.csh
 
 	echo 'set breakpoint pending on
-	set confirm off' >>~/.gdbinit
+set confirm off' >>~/.gdbinit
 }
+
+
+hw_info_print() {
+	uname -a
+	lscpu
+	lsmem
+	lspci
+	glxinfo|grep -A12 'Extended renderer info'
+	lsblk
+	sudo fdisk -l
+	df
+}
+
+hw_intel_gpu_install() {
+	echo "install driver, intel_gpu_top"
+	sudo dnf --enable-repo=rpmfusion-free --enable-repo=rpmfusion-free-updates \
+		install -y \
+		libva-intel-driver igt-gpu-tools
+	sudo dnf remove libva-intel-media-driver
+}
+
+hw_amd_gpu_hwaccel() {
+	sudo dnf swap --enable-repo=rpmfusion-free --enable-repo=rpmfusion-free-updates \
+		mesa-va-drivers mesa-va-drivers-freeworld
+	# sudo dnf update mesa-*
+}
+
+hw_battery_max_charge_95_percent() {
+	echo 95 | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold
+	echo 'echo 95 > /sys/class/power_supply/BAT0/charge_control_end_threshold' | sudo tee -a /sbin/init_user_cache.sh
+}
+
+hw_camera_disable() {
+	echo "blacklist uvcvideo" | sudo tee -a /etc/modprobe.d/blacklist.conf
+}
+
+hw_speaker_disable() {
+	echo 'blacklist pcspkr' | sudo tee -a /etc/modprobe.d/blacklist.conf
+}
+
+hw_bluetooth_disable() {
+	echo "disable bluetooth"
+ 	sudo systemctl disable bluetooth
+	echo "blacklist bluetooth
+blacklist btusb
+blacklist btrtl
+blacklist btbcm
+blacklist btintel" | sudo tee -a /etc/modprobe.d/blacklist.conf
+}
+
+hw_time_sync_once() {
+	timedatectl
+	sudo timedatectl set-ntp true
+	sudo systemctl start systemd-timesyncd
+	sudo systemctl status systemd-timesyncd
+	sleep 1
+	sudo systemctl stop systemd-timesyncd
+	timedatectl
+}
+
 
 user_git_dark() {
 	echo "Set dark colors for git-gui and gitk"
@@ -208,7 +228,7 @@ user_git_dark() {
 	cp -a ./gitk-dark ~/.config/git/gitk
 }
 
-user_cache() {
+user_cache_tmp() {
 	echo "set up user cache in /tmp"
 	USER_ID=$(id -u)
 	echo "mkdir -p /tmp/1
@@ -239,7 +259,6 @@ user_bashrc_conf() {
 	cp -ru .bashrc.d/* ~/.bashrc.d/
 }
 
-# KDE
 
 kde_apps_erase() {
 	echo "erase packages"
@@ -363,7 +382,6 @@ kde_misc() {
 	kwriteconfig5 --file kglobalshortcutsrc --group 'kwin' --key 'Window to Desktop 2' 'Meta+Ctrl+F2,none,Window to Desktop 2'
 }
 
-# LXQT
 
 lxqt_install() {
 	sudo dnf install @lxqt-desktop
@@ -372,15 +390,9 @@ lxqt_install() {
 }
 
 lxqt_apps_default_erase() {
-	sudo dnf erase -y \
+	sudo dnf remove -y \
 		audit dnfdragora dnfdragora-updater plocate
 	sudo killall -9 dnfdragora-updater || true
-}
-
-lxqt_dark() {
-	echo "install dark color theme"
-	sudo dnf install arc-kde-kvantum
-	# openbox --reconfigure
 }
 
 lxqt_autologin() {
@@ -389,7 +401,7 @@ User=$USER
 Session=lxqt" | sudo tee /etc/sddm.conf.d/autologin.conf
 
 	# launch by 'startx'
-	echo "exec startlxqt" | tee -a ~/.xinitrc
+	echo "exec startlxqt" >~/.xinitrc
 	# echo "exec startplasma-wayland" > ~/.xinitrc
 }
 
