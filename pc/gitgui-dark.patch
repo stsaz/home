@@ -1,0 +1,33 @@
+--- /usr/share/git-gui/lib/themed.tcl.orig	2022-11-09 08:51:29.404814714 +0300
++++ /usr/share/git-gui/lib/themed.tcl	2022-11-09 09:04:30.499810510 +0300
+@@ -44,6 +44,30 @@
+ 		add_option *Text.selectForeground $select_fg
+ 		add_option *Text.inactiveSelectBackground $inactive_select_bg
+ 		add_option *Text.inactiveSelectForeground $inactive_select_fg
++		
++		ttk::style configure TFrame -background #333
++		ttk::style configure TLabelframe -background #333
++		ttk::style configure TLabelframe.Label -background #333 -foreground #fff
++		ttk::style configure TPanedwindow  -background #333
++		ttk::style configure EntryFrame -background #333
++		ttk::style configure TScrollbar -background #666 -troughcolor #444 -arrowcolor #fff -arrowsize 15
++		ttk::style map TScrollbar -background [list active #333 disabled #000]
++		ttk::style configure TLabel -background #333 -foreground #fff
++		ttk::style configure TButton -background #333 -foreground #fff -borderwidth 2 -bordercolor #fff
++		ttk::style map TButton -background [list active #555 disabled #111 readonly #000]
++		ttk::style configure TCheckbutton -background #333 -foreground #fff -indicatorbackground #666 -indicatorcolor #fff
++		ttk::style map TCheckbutton -background [list active #555 disabled #111 readonly #000]
++		ttk::style configure TEntry -fieldbackground #333 -background #333 -foreground #fff -insertcolor #fff
++		ttk::style configure TRadiobutton -background #333 -foreground #fff
++		ttk::style map TRadiobutton -background [list active #555 disabled #111 readonly #000]
++		option add *TCombobox*Listbox.background #333 interactive
++		option add *TCombobox*Listbox.foreground #fff interactive
++		option add *TCombobox*Listbox.selectBackground blue interactive
++		option add *TCombobox*Listbox.selectForeground #fff interactive
++		option add *Listbox.Background #333 interactive
++		option add *Listbox.Foreground #fff interactive
++		option add *Text.Background #333 interactive
++		option add *Text.Foreground #fff interactive
+ 	}
+ }
+ 
