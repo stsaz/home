@@ -23,6 +23,8 @@ Content:
 	* [Best Heavy Metal Songs](#best-heavy-metal-songs)
 	* [Best Thrash Metal Songs](#best-thrash-metal-songs)
 	* [Best Modern Hard Rock Songs](#best-modern-hard-rock-songs)
+	* [Best Dance Songs](#best-dance-songs)
+	* [Best Pop Songs](#best-pop-songs)
 
 
 ## Diamond Heavy/Rock Bands
@@ -44,32 +46,24 @@ Content:
 | Annihilator | ca |
 | Evile |
 | Exodus | us |
-| Flotsam And Jetsam |
 | Havok | us |
 | Sepultura | br |
 | Slayer | us |
 | Suicidal Angels | gr |
-| Testament | us |
 
 
 ## Golden Heavy Bands
 
 | Artist | Country |
 | --- | --- |
-| AC/DC | au |
 | Accept | de |
 | Axel Rudi Pell | de |
-| Dio | us |
-| Judas Priest | uk |
 | Manowar | uk |
-| Motörhead | uk |
-| Mötley Crüe | us |
 | Pantera | us |
 | Primal Fear | de |
 | Rammstein | de |
 | Running Wild | de |
 | Sabaton | sw |
-| Sinner | de |
 | Ария | ru |
 
 
@@ -77,6 +71,7 @@ Content:
 
 | Artist | Country |
 | --- | --- |
+| AC/DC | au |
 | KISS | us |
 | Led Zeppelin | uk |
 | Rainbow | us |
@@ -649,3 +644,182 @@ Best Rock-n-Roll music and the music directly influenced by it.
 	Within Temptation - Iron
 	Within Temptation - Shot in the dark
 	Within Temptation - The Howling
+
+
+## Best Dance Songs
+
+	A-style - Remember Me
+	ABBA - Dancing Queen
+	ABBA - Lay All Your Love On Me
+	ABBA - Voulez Vous
+	ABBA - Gimme! Gimme! Gimme! (A Man After Midnight)
+	Ace Of Base - Doreen
+	Ace Of Base - All For You (7 Th Heaven Radio Edit)
+	Ace Of Base - Travel To Romantis
+	Aggro Santos/Kimberly Wyatt - Candy
+	Akcent - Kylie (Original Radio Edit)
+	Akcent - My Passion (Radio Edit)
+	Alex Gaudino Ft. Kelly Rowland - What A Feeling (Radio Edit) 2011
+	Alexandra Stan - Mr. Saxobeat (Extended Mix)
+	Amber - This Is Your Night
+	Andreea Banica - Could U (Radio Edit)
+	Antoine Clamaran - Gold
+	Armin van Buuren feat. Sharon den Adel - In & Out Of Love (Radio Edit)
+	ATB - Hold You
+	ATC - Around The World (Radio Version)
+	Azuro & Elly - Ti Amo
+	Basic Element - Touch You Right Now (Radio Edit)
+	Bee Gees - Tragedy
+	Bellatrax feat Tina Cousins - Can't Hold Back
+	Bellatrax feat. Sophia May - Find My Way Back Home (Extended Mix)
+	Blonde - I Loved You (feat. Melissa Steel)
+	Bobina feat. Betsie Larkin - You Belong To Me (Radio Edit)
+	Bruno Mars - Grenade (Funk3d Pop Radio Edit)
+	C.C.Catch - 'Cause You Are Young (Maxi-Version)
+	C.C.Catch - Heartbreak Hotel
+	C.C.Catch - Heaven And Hell
+	C.C.Catch - I Can Lose My Heart Tonight
+	Calanit - If.You.Come.Back.(Chris.Cox.Radio.Edit)
+	Cascada - Summer_of_Love_(Michael_Mind_Project_radio_edit)
+	Cher - Believe
+	Cher - All or Nothing (Almighty Radio Edit; 2023 Remaster)
+	Chuckie - Skydive (feat. Maiday)
+	David Guetta feat. Nicki Minaj - Turn Me On
+	Delerium feat. Nerina Pallot - Truly (The Wise Buddah Club Mix Radio Edit)
+	Demo - Солнышко
+	DJ Encore - I_See_Right_Through_To_You
+	DJ Groove vs. Le Truk feat. Da'Ville - Fire (Radio Mix)
+	Enrique Iglesias - Be With You
+	Enrique Iglesias - Ritmo Total
+	Erika - I Don't Know (Radio Mix)
+	Europe - The Final Coundown (Ural Dj's Remix)
+	Fragma - Say That You're Here (Radio Version)
+	Haddaway - What Is Love
+	Ian Carey & Rosette feat. Timbaland & Brasco - Amnesia (Radio Edit)
+	Inna - Hot
+	Inna - Love
+	Inna - Amazing
+	INNA - Endless
+	Inna - Crazy Sexy Wild
+	Inna - More Than Friends (feat. Daddy Yankee)
+	Inna - Tu Si Eu
+	Inna - Sun Is Up (Cahill Radio Edit)
+	Jenna Drey - One.Step.Further.(Lenny.B.Radio.Edit)
+	Jennifer Lopez - On The Floor
+	Jennifer Lopez - Ain't It Funny
+	Joy - Touch By Touch 2011 (Radio Version)
+	Juan Martinez & C.C.Catch - Unborn Love (Millennium Style Edit)
+	Katy Perry - E.T. (Dave Audé Remix Radio Edit)
+	Kostas Martakis - Ta Kalokerina Sagapo (Mark Angelo Summer Mix)
+	Lady Gaga - Alejandro (Radio Edit)
+	Lady Gaga - Born This Way
+	LADY GAGA - PERFECT ILLUSION
+	Leana - Embrace Me (Soul Seekerz Radio Edit)
+	Madonna - Girl Gone Wild
+	Modern Talking - You Are Not Alone
+	Modern Talking - Brother Louie '98 (Remastered)
+	Modern Talking - You're My Heart, You're My Soul '98 (Remastered)
+	Mohombi - Bumpy Ride
+	Mynt - Still Not Sorry (al B Rich Radio Mix)
+	Nancy Ajram - Yay
+	Nancy Ajram - Baya3 We Shater
+	Pixie Lott feat. Pusha T - What Do You Take Me For (Bimbo Jones Radio Edit)
+	R.I.O. - Shine On
+	Radio Killer - Calling_You_(Original_Radio_Edit)
+	Ricky Martin - Más
+	Sandra - Around My Heart (2006)
+	Sandra - In the Heat of the Night (2006)
+	Selena Gomez - Shake It Up
+	Selena Gomez & The Scene - Off The Chain
+	Selena Gomez & The Scene - Hit The Lights
+	September - Satellites (radio edit)
+	September - Cry For You (Radio Edit)
+	September - Bump And Grind
+	Shaun Baker - Frontline (Cahill Edit)
+	Sk8 - Amnesty_(Chris_Cox_Radio_Edit)
+	Sunfreakz Feat. Andrea Britton - Counting Down The Days (Original Radio Edit)
+	Taio Cruz Ft. Kylie Minouge - Higher
+	Tone Damli - Imagine
+	Wildboyz Feat. Ameerah - The Sound Of Missing You [Radio Edit]
+	Вирус - Нежное солнышко
+	Вирус - Попрошу тебя
+
+
+## Best Pop Songs
+
+	Alex Hepburn - Under (Radio Version)
+	Alsou - Before You Love Me
+	Arash ft. Helena - Broken Angel
+	Backstreet Boys - I Want It That Way
+	Backstreet Boys - Show Me the Meaning of Being Lonely
+	Britney Spears - 3
+	Britney Spears - Someday (I Will Understand)
+	Britney Spears - ...Baby One More Time
+	Britney Spears - (You Drive Me) Crazy
+	Britney Spears - Sometimes
+	Britney Spears - Born to Make You Happy
+	Britney Spears - Oops!... I Did It Again
+	Britney Spears - Stronger
+	Britney Spears - Overprotected
+	Britney Spears - Out from Under
+	Carly Rae Jepsen - Call Me Maybe
+	Celine Dion - That's The Way It Is
+	Celine Dion - A New Day Has Come (Radio Remix)
+	Christina Aguilera - Reflection
+	Christina Milian - AM To PM
+	Christina Milian - You Make Me Laugh
+	Clean Bandit, Sean Paul, Anne-Marie - Rockabye
+	Demi Lovato - Give Your Heart A Break
+	Demi Lovato & Joe Jonas - This Is Me
+	Enrique Iglesias - Bailamos
+	Enrique Iglesias - She Be The One
+	Faith Hill - There you'll be
+	Fauxliage - All The World (Radio Edit)
+	Inna - Oare
+	Jennifer Lopez - Love Don't Cost A Thing
+	Jessie J - Price Tag
+	Katy Perry - Hummingbird Heartbeat
+	Kelly Clarkson - Already Gone
+	Kelly Clarkson - Tip Of My Tongue
+	Kelly Clarkson - What Doesn't Kill You (Stronger)
+	Kelly Clarkson - 4 Carats
+	Lady Antebellum - Just a Kiss
+	Lenka - Trouble Is a Friend
+	Lucy Hale - Make You Believe
+	Megan Nicole - Summer Forever
+	Michelle Branch - I'd Rather Be In Love
+	Miley Cyrus - G.N.O. - Girl's Night Out
+	Miley Cyrus - Right Here
+	Miley Cyrus - Start All Over
+	Miley Cyrus - Good and Broken
+	Miley Cyrus - Full Circle (Album Version)
+	Miley Cyrus - These Four Walls (Album Version)
+	Miley Cyrus - Kicking And Screaming
+	Miley Cyrus - When I Look At You
+	Miley Cyrus - Stay
+	Miley Cyrus - Robot
+	Miley Cyrus - Just Like You
+	Miley Cyrus - If We Were a Movie
+	Miley Cyrus - I'll Always Remember You
+	Natalie Imbruglia - Torn
+	Ricky Martin & C. Aguilera - Nobody Wants To Be Lonely
+	Robbie Williams - Supreme
+	Roxette - Spending My Time
+	Selena Gomez - Slow Down
+	Selena Gomez & The Scene - I Promise You
+	Selena Gomez & The Scene - Tell Me Something I Don't Know
+	Selena Gomez & The Scene - Ghost Of You
+	Selena Gomez & The Scene - Live Like There's No Tomorrow
+	Selena Gomez & The Scene - Love You Like A Love Song
+	Selena Gomez & The Scene - Who Says
+	Shakira - Whenever, Wherever
+	Sia, Greg Kurstin - Never Give Up
+	Spice Girls - Say You'll Be There (Single Mix)
+	Spice Girls - Viva Forever (Radio Edit)
+	Spice Girls - Goodbye (Single Edit)
+	Taylor Swift - ...Ready For It?
+	Taylor Swift - Haunted
+	Taylor Swift - I Knew You Were Trouble
+	Taylor Swift - Blank Space
+	Taylor Swift - Shake It Off
+	The Script Feat. Will.I.Am - Hall of Fame
