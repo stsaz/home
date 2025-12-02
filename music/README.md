@@ -4,7 +4,7 @@
 
 | Name | Links |
 | --- | --- |
-| Enter The Darkness | [Instrumental](https://cloud.mail.ru/public/c3Ld/vXaJ57DAP) / [GP](hv/Enter%20The%20Darkness%20(Ebm).gp) |
+| Enter The Darkness | [Instrumental](https://cloud.mail.ru/public/CdYt/YfCP8g2rp) / [GP](hv/Enter%20The%20Darkness%20(Ebm).gp) |
 | The Silent Hunter  | [Demo](https://cloud.mail.ru/public/Gd6u/bH1YTcQby) / [Instrumental](https://cloud.mail.ru/public/5URx/zVpGUcdZp) / [GP](hv/The%20Silent%20Hunter%20(Gbm).gp) |
 | The Final Shout    | [Demo](https://cloud.mail.ru/public/7QaR/d7bmPcnTv) / [Instrumental](https://cloud.mail.ru/public/8nXe/BikFbAHAN) / [GP](hv/The%20Final%20Shout%20(Gbm).gp) |
 | Eternal Cry        | [Demo](https://cloud.mail.ru/public/vCub/qA7fDwEhT) / [Instrumental](https://cloud.mail.ru/public/opzL/MVrrTa7aZ) / [GP](hv/Eternal%20Cry%20(Gbm).gp) |
@@ -13,14 +13,14 @@
 | "LOD"              | [Instrumental](https://cloud.mail.ru/public/EG3k/LMgM3mVFX) / [GP](hv/LOD%20(Gm).gp) |
 | "ROTO"             | [Instrumental](https://cloud.mail.ru/public/7vXK/Ty1HCX3SX) / [GP](hv/ROTO%20(Fsm).gp) |
 | "DD"               | [Instrumental](https://cloud.mail.ru/public/zRc5/u5ReUyyNt) / [GP](hv/DD%20(Gm).gp) |
-| High Density       | [Instrumental](https://cloud.mail.ru/public/SWeV/BAG2fhowZ) / [GP](hv/High%20Density%20(Gbm).gp) |
-| Reign Of Light     | [Instrumental](https://cloud.mail.ru/public/Ms5N/4a35DKPws) / [GP](hv/Reign%20Of%20Light%20(Gbm).gp) |
+| High Density       | [Instrumental](https://cloud.mail.ru/public/GcMQ/o4LzHjprL) / [GP](hv/High%20Density%20(Gbm).gp) |
+| Reign Of Light     | [Instrumental](https://cloud.mail.ru/public/JBSY/ebGHXywf9) / [GP](hv/Reign%20Of%20Light%20(Gbm).gp) |
 | "CMH"              | [Demo](https://cloud.mail.ru/public/8LLN/bKhq8pSiV) / [Instrumental](https://cloud.mail.ru/public/x4GZ/Xtcz2jR3w) / [GP](hv/CMH%20(Gbm).gp) |
 | "FTH"              | [Demo](https://cloud.mail.ru/public/VBU3/ShBZWNk9C) / [GP](hv/FTH%20(Gbm).gp) |
 | "UTG"              | [Demo](https://cloud.mail.ru/public/qZFt/8kzVTNEbs) / [Instrumental](https://cloud.mail.ru/public/XKb2/FGSNrzzJx) / [GP](hv/UTG%20(Gbm).gp) |
 | "FLOR"             | [Instrumental](https://cloud.mail.ru/public/oBJr/N2bo5tfrU) / [GP](hv/FLOR%20(Gbm).gp) |
 | "AS"               | [Instrumental](https://cloud.mail.ru/public/gthz/owsKrA1zw) / [GP](hv/AS%20(Gm).gp) |
-| The Unchained      | [Instrumental](https://cloud.mail.ru/public/4yQe/NUPQDuAgq) / [GP](hv/The%20Unchained%20(Gbm).gp) |
+| The Unchained      | [Instrumental](https://cloud.mail.ru/public/Ujby/YLEix4qCu) / [GP](hv/The%20Unchained%20(Gbm).gp) |
 | "HLS"              | [Instrumental](https://cloud.mail.ru/public/jWyP/8FrRGvGU5) / [GP](hv/HLS%20(Gm).gp) |
 | "BFL"              | [Instrumental](https://cloud.mail.ru/public/B27X/v3kphcHTM) / [GP](hv/BFL%20(Gm).gp) |
 

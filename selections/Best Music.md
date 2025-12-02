@@ -657,21 +657,28 @@ Best Rock-n-Roll music and the music directly influenced by it.
 	Ace Of Base - All For You (7 Th Heaven Radio Edit)
 	Ace Of Base - Travel To Romantis
 	Aggro Santos/Kimberly Wyatt - Candy
+	Agnes - Release Me (radio Edit)
 	Akcent - Kylie (Original Radio Edit)
 	Akcent - My Passion (Radio Edit)
+	Alcazar - We Keep on Rockin'
 	Alex Gaudino Ft. Kelly Rowland - What A Feeling (Radio Edit) 2011
 	Alexandra Stan - Mr. Saxobeat (Extended Mix)
 	Amber - This Is Your Night
 	Andreea Banica - Could U (Radio Edit)
+	Angel City Feat. Lara McAllen - Love Me Right
 	Antoine Clamaran - Gold
 	Armin van Buuren feat. Sharon den Adel - In & Out Of Love (Radio Edit)
 	ATB - Hold You
+	ATB - Don't Stop! (Airplay Edit)
 	ATC - Around The World (Radio Version)
+	Auora - Real Life
 	Azuro & Elly - Ti Amo
+	Bailey feat Jodie Connor - Higher State
 	Basic Element - Touch You Right Now (Radio Edit)
 	Bee Gees - Tragedy
 	Bellatrax feat Tina Cousins - Can't Hold Back
 	Bellatrax feat. Sophia May - Find My Way Back Home (Extended Mix)
+	Black rock ft debra andrew - Blue water
 	Blonde - I Loved You (feat. Melissa Steel)
 	Bobina feat. Betsie Larkin - You Belong To Me (Radio Edit)
 	Bruno Mars - Grenade (Funk3d Pop Radio Edit)
@@ -680,22 +687,39 @@ Best Rock-n-Roll music and the music directly influenced by it.
 	C.C.Catch - Heaven And Hell
 	C.C.Catch - I Can Lose My Heart Tonight
 	Calanit - If.You.Come.Back.(Chris.Cox.Radio.Edit)
+	Camille Jones - The Truth
+	Carly Rae Jepsen - Tonight I'm Getting You
 	Cascada - Summer_of_Love_(Michael_Mind_Project_radio_edit)
 	Cher - Believe
 	Cher - All or Nothing (Almighty Radio Edit; 2023 Remaster)
+	Chris Parker - Symphony
 	Chuckie - Skydive (feat. Maiday)
+	Clokx.F_.Michelle.Escoffery - It's.A.Real.Love.(Radio.Edit)
+	Danny - If Only You (Feat. Therese)
+	Danny And Therese - If Only You
+	Daruso - When The Morning Comes (Liam Keegan Radio Edit)
 	David Guetta feat. Nicki Minaj - Turn Me On
+	David Guetta feat. Wynter Gordon - Dirty Talk (Radio Edit)
 	Delerium feat. Nerina Pallot - Truly (The Wise Buddah Club Mix Radio Edit)
 	Demo - Солнышко
 	DJ Encore - I_See_Right_Through_To_You
+	DJ Encore, Engelina - Walking In The Sky
 	DJ Groove vs. Le Truk feat. Da'Ville - Fire (Radio Mix)
+	DJ Sammy - Heaven (Radio Edit)
+	Don Omar - Danza Kuduro (feat. Lucenzo)
+	Edun - Put `em Up
 	Enrique Iglesias - Be With You
 	Enrique Iglesias - Ritmo Total
 	Erika - I Don't Know (Radio Mix)
 	Europe - The Final Coundown (Ural Dj's Remix)
+	Ferry Corsten feat. Aruna - Live Forever (Radio Edit)
 	Fragma - Say That You're Here (Radio Version)
+	Fragma - Forever And A Day (radio Mix)
 	Haddaway - What Is Love
 	Ian Carey & Rosette feat. Timbaland & Brasco - Amnesia (Radio Edit)
+	Ian Carey Feat. Snoop Dogg And Bobby Anthony - Last Night
+	In-Grid - Mama-Mia
+	In-Grid - You Promised Me (Radio Edit)
 	Inna - Hot
 	Inna - Love
 	Inna - Amazing
@@ -707,15 +731,26 @@ Best Rock-n-Roll music and the music directly influenced by it.
 	Jenna Drey - One.Step.Further.(Lenny.B.Radio.Edit)
 	Jennifer Lopez - On The Floor
 	Jennifer Lopez - Ain't It Funny
+	Jes - Imagination (Kaskade radio edit)
+	John De Sohn feat. Kristin Amparo - Dance Our Tears Away (Radio Edit)
+	Josh.Harris.F_.Sophia.Cruz - Sunlight
 	Joy - Touch By Touch 2011 (Radio Version)
 	Juan Martinez & C.C.Catch - Unborn Love (Millennium Style Edit)
+	Kate Ryan - Ella Elle L A (Radio Version)
+	Kato Feat. Jon - Turn the Lights Off (Radio Edit)
 	Katy Perry - E.T. (Dave Audé Remix Radio Edit)
+	Katy Rain - I wanna paint
+	Ke$ha - Die Young
+	Keen'v - Les Mots
+	KMC feat Sandy - Get Better
 	Kostas Martakis - Ta Kalokerina Sagapo (Mark Angelo Summer Mix)
 	Lady Gaga - Alejandro (Radio Edit)
 	Lady Gaga - Born This Way
 	LADY GAGA - PERFECT ILLUSION
 	Leana - Embrace Me (Soul Seekerz Radio Edit)
 	Madonna - Girl Gone Wild
+	Maruja Retana - Right Through Me
+	Mike Candys - Together Again (Vocal Radio Edit)
 	Modern Talking - You Are Not Alone
 	Modern Talking - Brother Louie '98 (Remastered)
 	Modern Talking - You're My Heart, You're My Soul '98 (Remastered)
@@ -723,21 +758,43 @@ Best Rock-n-Roll music and the music directly influenced by it.
 	Mynt - Still Not Sorry (al B Rich Radio Mix)
 	Nancy Ajram - Yay
 	Nancy Ajram - Baya3 We Shater
+	Neja - Back.4.The.Morning
+	Nikki Williams - Glowing
+	Paul Van Dyk - We Are Alive (full On Vocal) (radio Mix)
+	Paulina Rubio - Heat Of The Night
+	Perpetuous Dreamer - The Sound Of Goodbye
 	Pixie Lott feat. Pusha T - What Do You Take Me For (Bimbo Jones Radio Edit)
+	Pixie Lott feat. Pusha T - What Do You Take Me For (Bimbo Jones Radio Edit)
+	Plumb - In My Arms (bimbo Jones Radio Edit)
+	Pulse 81/marijuana - Got To Believe (stefano Sorrentino Radio Edit)
 	R.I.O. - Shine On
 	Radio Killer - Calling_You_(Original_Radio_Edit)
 	Ricky Martin - Más
+	Rihanna Feat Calvin Harris - We Found Love
+	Riva feat. Dannii Minogue - Who Do You Love Now
+	Rodriguez - Out In Space
+	Samantha Jade - What You've Done To Me
+	Samantha vs. Sabrina - call me (andrea t. mendoza vs. tibet original radio)
 	Sandra - Around My Heart (2006)
 	Sandra - In the Heat of the Night (2006)
+	Santito Vs. Block & Crown - Back It Up
+	Sarah Connor - Cold As Ice
 	Selena Gomez - Shake It Up
 	Selena Gomez & The Scene - Off The Chain
 	Selena Gomez & The Scene - Hit The Lights
 	September - Satellites (radio edit)
 	September - Cry For You (Radio Edit)
 	September - Bump And Grind
+	Sergio Galoyan F/ Tamra Keenan - Knowing You (Radio Edit)
+	Sharon Doorson  - High On Your Love
 	Shaun Baker - Frontline (Cahill Edit)
 	Sk8 - Amnesty_(Chris_Cox_Radio_Edit)
-	Sunfreakz Feat. Andrea Britton - Counting Down The Days (Original Radio Edit)
+	Star Stylers Feat. Мichy - Keep On Moving
+	Stellar Project - Get Up Stand Up (Phunk Investigation Radio Edit)
+	Sunfreakz - Counting Down The Days
+	Sunfreakz - Drive Out (the Attik Radio Edit)
+	Sunloverz vs. Rosette - Fire (Radio Edit)
+	Sunset - Fiesta (Radio Edit)
 	Taio Cruz Ft. Kylie Minouge - Higher
 	Tone Damli - Imagine
 	Wildboyz Feat. Ameerah - The Sound Of Missing You [Radio Edit]
