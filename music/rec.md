@@ -1,36 +1,22 @@
 # Sound Rec Settings
 
-### Simple
+### Thrash Metal
 
 	MT2
-	  V   10:30
-	  L   10:30
-	  H   10:30
-	  MG  12:00
-	  MF  12:00
-	  D   10:30
-	MG15
-	  G   MAX
-	  B   11:30
-	  M   MIN
-	  T   10:30
-	SM57 on axis center at 50cm
+		V   10+
+		L   12
+		H   MIN
+		MF  MAX
+		MG  MIN
+		D   9
 
-### Cut bass
-
-	MT2
-	  V   10:30
-	  L   1:30
-	  H   10:30
-	  MG  MIN
-	  MF  MIN
-	  D   10:30
 	MG15
-	  G   MAX
-	  B   2:0
-	  M   MIN
-	  T   MAX
-	SM57 on axis center at 50cm
+		G   MAX
+		B   MAX
+		M   MIN
+		T   10
+
+	SM57 off axis center at 52cm
 
 ### Clean
 
