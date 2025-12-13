@@ -1,7 +1,7 @@
 # set -x
 
 if test "$#" -lt 3 ; then
-	echo "Usage: [EXT=mkv] [OUTDIR=/tmp] [MPV=1] avcopy.sh FILE SFX SEEK [UNTIL]"
+	echo "Usage: [EXT=mkv] [OUTDIR=.] [MPV=1] [VDELAY=0.3] avcopy.sh FILE SFX SEEK [UNTIL]"
 	exit 0
 fi
 
@@ -10,7 +10,7 @@ IN="./$1"
 NAME="${1%.*}"
 SFX=$2
 if test "$OUTDIR" == "" ; then
-	OUTDIR=/tmp
+	OUTDIR=.
 fi
 
 if test "$EXT" == "" ; then
@@ -37,12 +37,18 @@ if test "$4" != "" ; then
 	UNTIL="-to $4"
 fi
 
+# delay video by X seconds
+FILTER=
+if test "$VDELAY" != "" ; then
+	FILTER+="$SEEK $UNTIL -itsoffset $VDELAY -i $IN -map 1:v -map 0:a"
+fi
+
 VIDEO="-c:v copy"
 AUDIO="-c:a copy"
 SUBS="-scodec copy"
 
-echo ffmpeg $SEEK $UNTIL -i "$IN" $VIDEO $AUDIO $SUBS -y "$OUT"
-ffmpeg -v warning $SEEK $UNTIL -i "$IN" $VIDEO $AUDIO $SUBS -y "$OUT"
+echo ffmpeg $SEEK $UNTIL -i "$IN" $FILTER $VIDEO $AUDIO $SUBS -y "$OUT"
+ffmpeg -v warning $SEEK $UNTIL -i "$IN" $FILTER $VIDEO $AUDIO $SUBS -y "$OUT"
 
 if test "$MPV" != "0" ; then
 	mpv "$OUT"

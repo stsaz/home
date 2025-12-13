@@ -121,6 +121,9 @@ services_disable() {
 	sudo systemctl disable abrtd
 	sudo systemctl disable dnf-makecache.timer
 	sudo systemctl disable dnf-makecache.service
+	sudo systemctl disable cups
+	sudo systemctl disable cups.socket
+	sudo systemctl disable cups.path
 	sudo systemctl mask systemd-oomd
 	sudo rm -rf /var/spool/abrt /var/lib/systemd/coredump
 

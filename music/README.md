@@ -19,7 +19,7 @@
 | High Density       | | V |
 | Reign Of Light     | | V |
 | "CMH"              | [Demo](https://cloud.mail.ru/public/8LLN/bKhq8pSiV) | V |
-| "FTH"              | [Demo](https://cloud.mail.ru/public/VBU3/ShBZWNk9C) |
+| "FTH"              | [Demo](https://cloud.mail.ru/public/VBU3/ShBZWNk9C) | |
 | "UTG"              | [Demo](https://cloud.mail.ru/public/qZFt/8kzVTNEbs) | V |
 | "FLOR"             | | V |
 | "AS"               | | V |
