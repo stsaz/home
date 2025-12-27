@@ -19,7 +19,7 @@
 | High Density       | | V |
 | Reign Of Light     | | V |
 | "CMH"              | [Demo](https://cloud.mail.ru/public/8LLN/bKhq8pSiV) | V |
-| "FTH"              | [Demo](https://cloud.mail.ru/public/VBU3/ShBZWNk9C) | |
+| "FTH"              | [Demo](https://cloud.mail.ru/public/VBU3/ShBZWNk9C) | V |
 | "UTG"              | [Demo](https://cloud.mail.ru/public/qZFt/8kzVTNEbs) | V |
 | "FLOR"             | | V |
 | "AS"               | | V |
@@ -36,8 +36,8 @@
 | Name | Demo | Instrumental |
 | --- | --- | --- |
 | Another Real World  | [Demo](https://cloud.mail.ru/public/saWP/r7fPPwmtg) | V |
-| Far Away            | | |
-| The Call of My Soul | [Demo](https://cloud.mail.ru/public/FYwQ/HzvKqHM2U) | |
+| Far Away            | | V |
+| The Call of My Soul | [Demo](https://cloud.mail.ru/public/FYwQ/HzvKqHM2U) | V |
 | In The Night        | [Demo](https://cloud.mail.ru/public/GRXz/ScquotpWb) | V |
 | Take Away The Sun   | [Demo](https://cloud.mail.ru/public/fsZW/dCzTh88b9) | V |
 | "DOH"               | | V |
