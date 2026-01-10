@@ -1,5 +1,7 @@
 # Music Records
 
+* [GP Files](https://cloud.mail.ru/public/Jsjz/PHxhqcaDc)
+
 ## Heavy/Thrash
 
 * [Instrumental Records](https://cloud.mail.ru/public/2zQn/uT9ATHGPt)
@@ -71,7 +73,7 @@
 
 | Name | Links |
 | --- | --- |
-| Комп Это Сила       | [Demo](https://cloud.mail.ru/public/pjDN/nM7nmyakR) / [GP](exp/Комп%20Это%20Сила%20(Fsm).gp) |
+| Комп Это Сила       | [Demo](https://cloud.mail.ru/public/pjDN/nM7nmyakR) |
 
 
 ## Covers

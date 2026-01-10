@@ -1,7 +1,7 @@
 # Encode a file with ffmpeg
 
 if test "$#" == 0 ; then
-	echo "Usage: [V=1] [FPS=30] [VF_WIDE=1] [VC=264] [VQ=23] [AC=opus] [OUTDIR=...] [MPV=0] avenc.sh IN [OUT SEEK UNTIL]"
+	echo "Usage: [FPS=30] [VF_WIDE=1] [VC=264] [VQ=23] [AC=opus] [OUTDIR=...] [EXEC=0] avenc.sh IN [OUT SEEK UNTIL]"
 	exit 0
 fi
 
@@ -19,15 +19,50 @@ path_remove_ext__str() {
 	echo "${1%.*}"
 }
 
+# octal -> decimal
+dec_oct__n() {
+	local n=$1
+	if test $n == 08 ; then
+		n=8
+	elif test $n == 09 ; then
+		n=9
+	fi
+	echo $n
+}
+
+# hh:mm:ss -> ssss
+time_sec__t() {
+	local sec=$(echo $1 | awk -F : '{print $3}')
+	local min=$(echo $1 | awk -F : '{print $2}')
+	local hour=$(echo $1 | awk -F : '{print $1}')
+	sec=$(dec_oct__n $sec)
+	min=$(dec_oct__n $min)
+	echo $((hour * 3600 + min * 60 + sec))
+}
+
+time_subtract__t_by() {
+	# hh:mm:ss.msc
+	local msec=$(echo $1 | awk -F . '{print $2}')
+	local t=$(echo $1 | awk -F . '{print $1}')
+	local sec=$(time_sec__t $t)
+	if test $sec -lt $2 ; then
+		sec=0
+	else
+		sec=$((sec - $2))
+	fi
+	echo $sec.$msec
+}
+
 # get timestamp of the nearest keyframe before the time value
 timestamp_nearest__file_time() {
 	ffprobe \
-		-read_intervals $2%$2 \
+		-read_intervals $(time_subtract__t_by $2 6)%$2 \
 		-v error \
 		-skip_frame nokey \
-		-show_entries frame=pkt_pts_time \
+		-show_entries frame=pts_time \
 		-select_streams v \
-		-of csv=p=0 "$1"
+		-of csv=p=0 "$1" \
+		| tail -n 1
 }
 
 if test "$SEEK" != "" ; then
@@ -97,8 +132,8 @@ AUDIO="-c:a $AUDIO"
 # FILTER+="$SEEK $UNTIL -itsoffset 0.5 -i $IN -map 1:v -map 0:a"
 
 if test "$FPS" != "" ; then
-	# FILTER+=" -r $FPS "
-	FILTER+=" -filter:v fps=$FPS "
+	FILTER+=" -r $FPS "
+	# FILTER+=" -filter:v fps=$FPS "
 else
 	FILTER+=" -vsync vfr "
 fi
@@ -122,6 +157,6 @@ echo ffmpeg $HWACCEL $SEEK $UNTIL -i $IN $FILTER $VIDEO $AUDIO "$OUT"
 ffmpeg $HWACCEL $SEEK $UNTIL -i "$IN" $FILTER $VIDEO $AUDIO "$OUT"
 
 
-if test "$MPV" != "0" ; then
-	mpv "$OUT" &
+if test "$EXEC" != "" ; then
+	xdg-open "$OUT"
 fi
