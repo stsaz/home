@@ -14,20 +14,27 @@
 | The Final Shout    | [Demo](https://cloud.mail.ru/public/7QaR/d7bmPcnTv) | V |
 | Eternal Cry        | [Demo](https://cloud.mail.ru/public/vCub/qA7fDwEhT) | V |
 | Wanted List        | | V |
-| In Last Attack     | | V |
-| "LOD"              | | V |
-| "ROTO"             | | V |
-| "DD"               | | V |
 | High Density       | | V |
-| Reign Of Light     | | V |
-| "CMH"              | [Demo](https://cloud.mail.ru/public/8LLN/bKhq8pSiV) | V |
-| "FTH"              | [Demo](https://cloud.mail.ru/public/VBU3/ShBZWNk9C) | V |
-| "UTG"              | [Demo](https://cloud.mail.ru/public/qZFt/8kzVTNEbs) | V |
-| "FLOR"             | | V |
-| "AS"               | | V |
 | The Unchained      | | V |
+| Reign Of Light     | | V |
+| "FTH"              | [Demo](https://cloud.mail.ru/public/VBU3/ShBZWNk9C) | V |
+| "LOD"              | | V |
+| "CMH"              | [Demo](https://cloud.mail.ru/public/8LLN/bKhq8pSiV) | V |
+| "UTG"              | [Demo](https://cloud.mail.ru/public/qZFt/8kzVTNEbs) | V |
+| "AS"               | | V |
+| "FLOR"             | | V |
 | "HLS"              | | V |
 | "BFL"              | | V |
+
+### Heavy
+
+| Name | Demo | Instrumental |
+| --- | --- | --- |
+| In Last Attack     | | V |
+| "DD"               | | V |
+| "ROTO"             | | V |
+| "CTTT"             | | V |
+| "STD"              | | V |
 
 
 ## Soft
